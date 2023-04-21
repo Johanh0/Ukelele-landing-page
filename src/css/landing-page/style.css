@@ -1,0 +1,118 @@
+@import url("https://fonts.googleapis.com/css2?family=Anuphan:wght@300;400;500;600;700&family=Pacifico&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0; }
+
+html {
+  font-size: 62.5%;
+  font-family: 'Anuphan', sans-serif; }
+
+header {
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: fit-content;
+  padding: 35px 55px;
+  font-size: 2.2rem; }
+  header .header-logo {
+    font-weight: bolder;
+    font-family: 'Pacifico', 'cursive'; }
+    header .header-logo p i {
+      margin-right: 5px; }
+  header .header-menu {
+    display: flex;
+    align-items: center;
+    gap: 40px; }
+    header .header-menu .burger {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      width: 35px;
+      height: 25px;
+      cursor: pointer; }
+      header .header-menu .burger .line1, header .header-menu .burger .line2 {
+        width: 100%;
+        height: 5px;
+        border-radius: 2px;
+        background-color: black; }
+
+.hero {
+  display: flex;
+  align-items: center;
+  padding: 15%;
+  width: 100%;
+  height: 100vh;
+  background: #e76f51; }
+  .hero .hero-text {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    text-align: center; }
+    .hero .hero-text h1 {
+      font-family: 'Pacifico', cursive;
+      font-size: 13rem;
+      line-height: 120px;
+      font-weight: normal; }
+      .hero .hero-text h1 span {
+        margin-left: 150px; }
+    .hero .hero-text p {
+      max-width: 500px;
+      font-size: 1.5rem; }
+    .hero .hero-text .btn {
+      position: relative;
+      font-size: 1.5rem;
+      text-transform: uppercase;
+      text-decoration: none;
+      padding: 1em 2.5em;
+      display: inline-block;
+      max-width: 200px;
+      height: fit-content;
+      border-radius: 6em;
+      transition: all .2s;
+      border: none;
+      font-family: inherit;
+      font-weight: 500;
+      color: black;
+      background-color: white;
+      margin: 0 auto;
+      cursor: pointer; }
+      .hero .hero-text .btn:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); }
+      .hero .hero-text .btn:active {
+        transform: translateY(-1px);
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2); }
+      .hero .hero-text .btn::after {
+        content: "";
+        display: inline-block;
+        height: 100%;
+        width: 100%;
+        border-radius: 100px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        transition: all .4s; }
+      .hero .hero-text .btn::after {
+        background-color: #fff; }
+      .hero .hero-text .btn:hover::after {
+        transform: scaleX(1.4) scaleY(1.6);
+        opacity: 0; }
+  .hero .custom-shape-divider-bottom {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg); }
+  .hero .custom-shape-divider-bottom svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 150px; }
+  .hero .custom-shape-divider-bottom .shape-fill {
+    fill: #FFFFFF; }
